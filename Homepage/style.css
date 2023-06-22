@@ -246,6 +246,17 @@ footer li{
     }
 }
 
+@media screen and (max-width:1200px){
+    .avatares{
+        height: 80vh;
+    }
+
+    .onda_main{
+        bottom: 500px;
+    }
+    
+}
+
 @media screen and (max-width:990px){
     .botvw{
         right: 100px;
@@ -357,13 +368,4 @@ footer li{
     }
 }
 
-@media screen and (max-width:1200px){
-    .avatares{
-        height: 80vh;
-    }
 
-    .onda_main{
-        bottom: 500px;
-    }
-    
-}
