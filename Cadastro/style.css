@@ -11,6 +11,7 @@
     --color3: #FFD601;
     --color4: #00FF0A;
     --color5: #0000;
+    --branco: #ffffff;
 }
 
 body {
@@ -38,7 +39,7 @@ body {
     height: 900px;
 }
 
-img {
+.logovw {
     width: 150px;
     position: absolute;
     top: 10px;
@@ -154,7 +155,7 @@ div>a {
     margin-left: 50px;
     color: white;
 }
-.aceite > img {
+.aceite > .logovw {
     width: 15px;
     height: 15px;
     margin-top: 1020px;
@@ -211,7 +212,7 @@ div>a {
         width: 100%;
     }
 
-    img {
+    .logovw {
         width: 100px;
         margin-top: 30px;
     }
@@ -268,7 +269,7 @@ div>a {
         font-size: 11px;
     }
 
-    .aceite > img {
+    .aceite > .logovw {
         width: 12px;
         height: 12px;
     }
@@ -284,7 +285,7 @@ div>a {
         height: 800px;
     }
 
-    img {
+    .logovw {
         width: 80px;
         margin-top: 30px;
     }
@@ -346,7 +347,7 @@ div>a {
         font-size: 7px;
     }
 
-    .aceite > img {
+    .aceite > .logovw {
         width: 8px;
         height: 8px;
         margin-top: 730px;
@@ -355,3 +356,89 @@ div>a {
         width: 50%;
     }
 }
+
+#overlay{
+    width: 60%;
+    height: 50%;
+    border-radius: 140px;
+    border: 11px solid rgba(255, 255, 255, 0.30);
+    background: linear-gradient(134deg, rgba(71, 145, 255, 0.60) 0%, rgba(0, 16, 31, 0.60) 100%);
+    backdrop-filter: blur(20px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 50px;
+    padding: 0 70px;
+
+}
+
+#overlay{
+    color: var(--branco);
+}
+
+.overlay_div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.overlay_div:nth-child(1)>div>h1{
+    font-size: 35px;
+    width: 70%;
+}
+
+.overlay_div:nth-child(1)>div>span{
+    display: flex;
+    width: 70%;
+}
+
+.campo_cod{
+    width: 90px;
+    height: 100%;
+    border-radius: 25px;
+    border: 4px solid #FFF;
+    background: rgba(255, 255, 255, 0.01);
+}
+
+.overlay_div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.overlay_div:nth-child(2)>div{
+    margin-top: 20px;
+
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+
+.overlay_div:nth-child(2)>p{
+    font-size: 22px;
+}
+
+input{
+    font-size: 20px;
+    text-align: center;
+    color: var(--branco);
+}
+
+
+/* ----------------OCULTAR SETAS NO TYPE NUMBER-------------- */
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+/* ----------------OCULTAR SETAS NO TYPE NUMBER-------------- */
