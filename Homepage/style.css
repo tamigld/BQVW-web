@@ -42,7 +42,7 @@ header>div:nth-child(2)>img{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 6%;
+    width: 7%;
 }
 
 .home{
@@ -61,6 +61,8 @@ main{
     background-size: cover;
     height: 100%;
     width: 100%;
+
+    position: relative;
 }
 
 .introducao{
@@ -77,7 +79,7 @@ main{
 .conteudo{
     border-radius: 40px;
     width: 80%;
-    height: 55%;
+    /* height: 55%; */
     background-color: var(--azulEsc);
     padding: 10px 40px;
     margin-left: 70px;
@@ -127,7 +129,7 @@ h1{
 .onda_main{
     width: 100%;
     position: absolute;
-    bottom: -70px;
+    bottom: 0;
 }
 
 .avatares{
@@ -137,7 +139,6 @@ h1{
     justify-content: center;
     gap: 100px;
 
-    height: 100vh;
     background-color: var(--bgcolor);
 }
 
@@ -152,6 +153,7 @@ h1{
     justify-content: center;
 }
 .escolher_avatar{
+    flex-wrap: wrap;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -226,144 +228,175 @@ footer li{
 }
 
 
-/* ------------------------RESPONSIVIDADE--------------------------- */
+/* -------------------RESPONSIVIDADE--------------------------
+QUEBRAS
+- 1200px OK
+- 990px OK
+- 768px OK
+- 576px OK
+- 330px OK
+*/
 
-@media screen and (max-width:1400px){
-    .posicionamento_conteudo{
-        height: 700px;
-    }
-
-    .introducao{
-        height: 100%;
-    }
-
-    .onda_main{
-        bottom: 200px;
-    }
-
-    .gradiente_main{
-        bottom: auto;
-    }
-}
-
-@media screen and (max-width:990px){
+@media screen and (max-width: 1200px){
     .botvw{
-        right: 100px;
-    }
-
-    .onda_main{
-        bottom: 250px;
-    }
-
-    .avatares{
-        height: 80vh;
-        gap: 50px;
-    }
-
-    .escolher_avatar{
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: 20px;
-    }
-
-    footer{
-        gap: 40px;
-    }
-
-    footer>div>h2,{
-        font-size: 18px;
-    }
-
-    footer>div>ul>li>a{
-        font-size: 12px;
-    }
-
-    .conteudo{
-        margin-top: 10%;
+        right: 80px;
     }
 
     .home{
-        width: 10%;
+        width: 8%;
     }
 }
 
-@media screen and (max-width:768px) {
-    footer{
-        padding: 80px 30px;
-        gap: 20px;
-    }
-
-    footer>div>h2{
-        font-size: 17px;
+@media screen and (max-width: 990px) {
+    .escolher_avatar{
+        display: grid;
+        grid-template-columns: auto auto;
     }
 
     .botvw>img{
         width: 300px;
     }
+
+    .home{
+        width: 9%;
+    }
+
+    footer{
+        padding: 80px 30px;
+        gap: 20px;
+    }
     
+}
+
+@media screen and (max-width: 768px) {
+    .home{
+        width: 12%;
+    }
+
+    .botvw>img{
+        width: 210px;
+    }    
+
+    .posicionamento_conteudo{
+        height: calc(100vh - 251px);
+    }
+
+    /* .introducao{
+        height: 70vh;
+    } */
+
+    footer{
+        flex-direction: column;
+        padding: 45px 50px;
+        gap: 25px;
+    }
+
+    footer>div{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:720px){
+    .conteudo>p{
+        font-size: 12px;
+    }
+
     .botvw{
-        right: 50px;
+        right: 40px;
+    }
+
+    .posicionamento_conteudo>.conteudo,
+    .posicionamento_conteudo>.conteudo>.seg_conteudo{
+        width: 150%;
+    }
+
+    .posicionamento_conteudo>.conteudo{
+        margin-left: 35px;
     }
 
     .home{
         width: 13%;
     }
 
-    header{
-        height: 70px;
-    }
-}
-
-@media screen and (max-width: 576px){
-    .botvw>img{
-        width: 150px;
+    .home>img{
+        width: 25px;
     }
 
-    .conteudo{
-        width: 100%;
-        margin-left: 50px;
+    .home>p{
+        font-size: 20px;
     }
-
-    .seg_conteudo{
-        width: 150%;
-    }
-
-    .home{
-        width: 18%;
-    }
-
-    .posicionamento_conteudo{
-        height: 550px;
-    }
-
-    .onda_main{
-        bottom: 655px;
-    }
-
+    
     .avatares>h1{
-        font-size: 25px;
-    }
-
-    .escolher_avatar{
-        gap: 35px;
+        font-size: 30px;
     }
 
     .avatares>div:nth-child(2)>a>img{
         width: 150px;
     }
 
-    footer{
-        flex-direction: column;
+    .botao_acessar{
+        padding: 15px 60px;
     }
 }
 
-@media screen and (max-width:1200px){
-    .avatares{
-        height: 80vh;
+@media screen and (max-width: 330px) {
+    .avatares>div:nth-child(2)>a>img {
+        width: 125px;
+    }    
+
+    .botao_acessar{
+        padding: 15px 40px;
     }
 
-    .onda_main{
-        bottom: 500px;
+    .avatares>h1 {
+        font-size: 25px;
     }
-    
+
+    .conteudo{
+        height: 60%;
+        margin-left: 10px;
+    }
+
+    .conteudo>p:nth-child(4){
+        display: none;
+    }
+
+    .conteudo>p{
+        font-size: 14px;
+    }
+
+    .seg_conteudo{
+        left: -57px
+    }
+
+    .botvw {
+        position: absolute;
+        right: 0;
+        top: 250px;
+    }
+
+    .botvw>img{
+        width: 175px;
+    }
+
+    .escolher_avatar{
+        gap: 20px;
+    }
+
+    .avatares{
+        gap: 55px;
+    }
+
+    .botao_acessar {
+        padding: 10px 25px;
+        font-size: 15px;
+    }
+
+    .avatares>div:nth-child(3){
+        margin-top: -50px;
+    }
+
+    .bot_correndo{
+        width: 75px;
+    }
 }
