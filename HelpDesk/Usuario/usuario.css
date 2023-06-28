@@ -149,6 +149,12 @@ section {
     margin-top: 150px;
 }
 
+.menu_hamburgue{
+    width: 50px;
+    margin: 15px;
+    display: none;
+}
+
 .alinhamento_nome {
     display: flex;
     justify-content: flex-start;
@@ -193,4 +199,116 @@ tr:hover {
 
 .ajustar_lapis img{
     width: 25px;
+}
+
+
+@media screen and ( max-width:1400px ) {
+
+    .aside_position{
+        border: none;
+    }
+
+    section{
+        border: none;
+    }
+}
+
+@media screen and (max-width:1045px) {
+    aside{
+        display: none;
+    }
+
+    section{
+        width: 100%;
+    }
+    .Resumo_recentes img{
+        display: flex;
+    }
+
+    .menu_hamburgue{
+        display: flex;
+    }
+}
+
+@media screen and (max-width:810px) {
+    table{
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    thead {
+        display: none;
+    }
+
+    td {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 20ch auto;
+
+        padding: 10px 15px;
+        /* border-bottom: none; */
+    }
+
+    td:nth-child(1)::before{
+        content: " ";
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+    td:nth-child(2)::before{
+        content: "Setor: ";
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+    td:nth-child(3)::before{
+        content: "Cargo ";
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+    td:nth-child(4)::before{
+        content: "Tipo de solicitação: ";
+        font-weight: 700;
+        text-transform: capitalize;
+
+    }
+    td:nth-child(5)::before{
+        content: "Data: ";
+        font-weight: 700;
+        text-transform: capitalize;
+
+    }
+    td:nth-child(6)::before{
+        content: "Situação: ";
+        font-weight: 700;
+        text-transform: capitalize;
+
+    }
+
+
+    td:first-child {
+        padding-top: 24px;
+    }
+
+    td:last-child {
+        padding-bottom: 24px;
+    }   
+}
+
+@media screen and (max-width: 662px) {
+    main {
+        width: 90%;
+    }    
+}
+
+@media screen and (max-width: 500px) {
+    td {
+        grid-template-columns: 12ch auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    td {
+        font-size: 14px;
+    }
 }

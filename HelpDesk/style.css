@@ -55,7 +55,7 @@ a {
 }
 
 .Dashboard_aside {
-    width: 200px;
+    width: 12vw;
     background: #01B0F1;
     border-radius: 0 15px 15px 0;
     display: flex;
@@ -64,6 +64,7 @@ a {
 }
 
 .Usuario_aside {
+    width: 12vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -71,18 +72,21 @@ a {
 }
 
 .Dados_aside {
+    width: 12vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .Suporte_aside {
+    width: 12vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .COnfiguração_aside {
+    width: 12vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -96,15 +100,23 @@ section {
     background-image: url(img/fundo.png);
 }
 
-
+.Resumo_recentes img{
+    width: 50px;
+    display: none;
+}
 
 .Resumo_recentes {
     margin: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .PaiDosQuadrados {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    gap: 30spx;
 }
 
 .quadrado_resumo {
@@ -204,3 +216,114 @@ tbody img{
     width: 45px;
     margin: 10px;
 }
+
+@media screen and ( max-width:1400px ) {
+
+    .aside_position{
+        border: none;
+    }
+
+    section{
+        border: none;
+    }
+}
+
+@media screen and (max-width:1045px) {
+    aside{
+        display: none;
+    }
+
+    section{
+        width: 100%;
+    }
+    .Resumo_recentes img{
+        display: flex;
+    }
+}
+
+@media screen and (max-width:810px) {
+    table{
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    thead {
+        display: none;
+    }
+
+    td {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 20ch auto;
+
+        padding: 10px 15px;
+        /* border-bottom: none; */
+    }
+
+    td:nth-child(1)::before{
+        content: " ";
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+    td:nth-child(2)::before{
+        content: "Setor: ";
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+    td:nth-child(3)::before{
+        content: "Cargo ";
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+    td:nth-child(4)::before{
+        content: "Tipo de solicitação: ";
+        font-weight: 700;
+        text-transform: capitalize;
+
+    }
+    td:nth-child(5)::before{
+        content: "Data: ";
+        font-weight: 700;
+        text-transform: capitalize;
+
+    }
+    td:nth-child(6)::before{
+        content: "Situação: ";
+        font-weight: 700;
+        text-transform: capitalize;
+
+    }
+
+
+    td:first-child {
+        padding-top: 24px;
+    }
+
+    td:last-child {
+        padding-bottom: 24px;
+    }   
+}
+
+@media screen and (max-width: 662px) {
+    main {
+        width: 90%;
+    }    
+}
+
+@media screen and (max-width: 500px) {
+    td {
+        grid-template-columns: 12ch auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    td {
+        font-size: 14px;
+    }
+}
+
+
+
+
