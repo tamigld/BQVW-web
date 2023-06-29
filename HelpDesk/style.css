@@ -92,6 +92,15 @@ a {
     align-items: center;
     margin-top: 55px;
 }
+.COnfiguração_aside img{
+    width: 50px;
+    
+}
+.COnfiguração_aside:hover{
+    background: #01B0F1;
+    border-radius: 0 15px 15px 0;
+    transition:ease-in 0.5s;
+}
 
 section {
     height:100%;
