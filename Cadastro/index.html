@@ -15,7 +15,7 @@
 
 <body>
     <section class="cadastro">
-        <div class="aba_cadastro">
+        <form class="aba_cadastro">
             <img class="logovw" src="img/VW.png" alt="">
             <h2>Faça seu cadastro</h2>
             <input class="id" placeholder=" ID" type="text">
@@ -56,38 +56,50 @@
                         <li>No mínimo uma letra minúscula</li>
                         <li>No mínimo um número</li>
                     </ul>
-                    <a href="#">Cadastrar</a>
+                    <div>
+                        <a onclick="on()" href="#">Cadastrar</a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </form>
         <div class="aceite">
             <img src="img/check (1).png" alt="">
             <span>Li e aceito os Termos e Condições da corporação</span>
         </div>
     </section>
 
-    <div id="overlay">
-        <div class="overlay_div">
-            <div>
-                <h1>Confirmação do número de celular</h1>
-                <span>Enviaremos um código ao seu número de celular registrado anteriormente</span>
+    <div id="mostrar_overlay">
+        <div id="overlay">
+            <div class="overlay_div">
+                <div>
+                    <h1>Confirmação do número de celular</h1>
+                    <span>Enviaremos um código ao seu número de celular registrado anteriormente</span>
+                </div>
+                <div>
+                    <img class="icon_celular" src="../Cadastro/img/icon_celular.png" alt="">
+                </div>
             </div>
-            <div>
-                <img class="icon_celular" src="../Cadastro/img/icon_celular.png" alt="">
+            <div class="container">
+                <div class="wrapper-container">
+                  <p>
+                    Digite o código que você recebeu no seu número de celular com final XX59
+                  </p>
+              
+                    <div class="wrapper-pin">
+                        <input class="campo_cod" maxlength="1" type="tel" class="pin" tabIndex="1"/>
+                        <input class="campo_cod" maxlength="1" type="tel" class="pin" tabIndex="2"/>
+                        <input class="campo_cod" maxlength="1" type="tel" class="pin" tabIndex="3"/>
+                        <input class="campo_cod" maxlength="1" type="tel" class="pin" tabIndex="4"/>
+                        <input class="campo_cod" maxlength="1" type="tel" class="pin" tabIndex="5"/>
+                        <input class="campo_cod" maxlength="1" type="tel" class="pin" tabIndex="6"/>
+                    </div>          
+                </div>
             </div>
+            <a href="">Enviar</a>
         </div>
-        <div class="overlay_div">
-            <p>Digite aqui o código que recebeu no número com final XX74</p>
-            <div>
-                <input name="" class="campo_cod" type="number" maxlength="1" minlength="0">
-                <input class="campo_cod" type="number">
-                <input class="campo_cod" type="number">
-                <input class="campo_cod" type="number">
-                <input class="campo_cod" type="number">
-            </div>
-        </div>
-
+        <a onclick="off()" href="#">Voltar</a>
     </div>
+<script src="script.js"></script>
 </body>
 
 </html>
