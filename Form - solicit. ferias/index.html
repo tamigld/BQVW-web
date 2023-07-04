@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/botquest_icon.png" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -19,9 +21,9 @@
         </a>
     </header>
    <main>
-    <div class="seta esquerda">
+    <a href="#" class="seta esquerda">
         <img src="./img/seta_left.png" alt="">
-    </div>
+    </a>
     <section class="conteudo">
         <section class="left">
             <h1>Todo  procedimento será pelo BotQuest</h1>
@@ -58,13 +60,21 @@
             </div>
             <p>A confirmação da sua solicitação chegará através do seu e-mail ou você poderá acompanhar diretamente aqui no BotQuest VW.</p>
         </section>
-        <section class="right">
-            <img src="./img/VWlogovw.png" alt="">
+
+        <div class="mostrar" id="botao_overlay">
+            <a href="#" onclick="on()">
+                <p>Clique aqui para ver um exemplo de formulário.</p>
+                <img src="img/bot_pergunta.png" alt="">
+            </a>
+        </div>
+
+        <section class="right" id="overlay">
+            <img src="./img/logovw.png" alt="">
             <form class="form">
                 <h1>Formulário solicitação de férias</h1>
                 <div class="conjuntoform">
                     <label class="label" for="id">
-                        <input id="id" class="campo_digito" type="number" placeholder="ID">   
+                        <input id="id" class="campo_digito" type="tel" maxlength="5" placeholder="ID">   
                     </label>
                 </div>
                 <div class="conjuntoform">
@@ -79,13 +89,14 @@
                 </div>
                 <a class="botao enviar" href="#">Enviar</a>
                 <img class="bot_pc" src="../Form - solicit. ferias/img/bot_pc.png" alt="">
-
             </form>
+            <a class="sair" href="#" onclick="off()">Sair do exemplo</a>
         </section>
     </section>
-    <div class="seta direita">
+    <a href="#" class="seta direita">
         <img src="./img/seta_right.png" alt="">
-    </div>
+    </a>
    </main> 
+<script src="script.js"></script>
 </body>
 </html>
