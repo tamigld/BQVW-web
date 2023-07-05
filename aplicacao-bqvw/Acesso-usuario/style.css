@@ -14,26 +14,31 @@ body {
     /* overflow: hidden; */
     background-image: url(img/bg\ \(2\).png);
     background-size: cover;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     font-family: 'Montserrat', sans-serif;
-    position: absolute;
+    position: relative;
 }
 
-.tudo>img {
-    width: 60px;
+.tudo{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
 }
 
 .dados {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 550px;
-    height: 480px;
+    width: 500px;
+    height: 400px;
     background-color: white;
-    margin-top: 130px;
-    margin-left: 480px;
-    border-radius: 70px;
-    gap: 10px;
+    border-radius: 60px;
 }
 
 .dados>span {
@@ -42,13 +47,11 @@ body {
     width: 70%;
 }
 
-.dados>img {
-    margin-top: -70px;
+.logo{
+    width: 100px;
+    margin-top: -50px;
 }
 
-.body > img :nth-child(3) {
-    width: 100px;
-}
 .dados> a {
     width: 70%;
     height: 70px;
@@ -69,10 +72,11 @@ body {
     font-family: var(--font1);
     font-weight: 900;
     width: 80%;
-    margin-left: 80px;
+    margin-top: 10px;
+    text-align: center;
 }
 
-.botton>a {
+/* .botton>a {
     width: 200px;
     text-align: center;
     background: linear-gradient(94.31deg, #01B0F1 -8.53%, #35BDF5 38.95%, #B1DBFF 116.35%);
@@ -88,18 +92,15 @@ body {
     font-family: var(--font1);
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
-}
+} */
 
 .vwbot {
+    width: 300px;
     position: absolute;
+    right: 280px;
+    bottom: 80px;
 }
 
-body>img {
-    margin-top: -240px;
-    margin-left: 900px;
-    width: 350px;
-    height: 350px;
-}
 
 /* .adm_conector {
     width: 80px;

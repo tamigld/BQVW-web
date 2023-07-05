@@ -91,14 +91,14 @@ header>a>img{
 .left>h1{
     text-align: center;
     font-weight: 600;
-    width: 110%;
+    width: 80%;
     font-size: 45px;
 }
 
 .left>p{
     width: 110%;
     text-align: left;
-    font-size: 35px;
+    font-size: 20px;
 }
 
 .left{
@@ -108,7 +108,7 @@ header>a>img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
 }
 
 /* AREA DIREITA */
@@ -118,7 +118,7 @@ header>a>img{
     color: var(--preto);
     font-size: 30px;
     text-align: center;
-    width: 75%;
+    width: 80%;
 }
 
 .right>img:nth-child(1){
@@ -198,7 +198,7 @@ input,
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10%;
+    gap: 20%;
     height: 100vh;
 }
 
@@ -207,7 +207,7 @@ input,
 
     position: relative;
     right: -40%;
-    bottom: 27%;
+    bottom: 25%;
 }
 
 .mostrar{
@@ -270,7 +270,7 @@ QUEBRAS:
     .form>h1{
         margin-top: 60px;
         font-size: 20px;
-        width: 60%;
+        width: 75%;
     }
 
     .form{
