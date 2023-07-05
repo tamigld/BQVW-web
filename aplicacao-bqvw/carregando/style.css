@@ -26,6 +26,9 @@ div {
     margin-top: 20%;
 
 }
+a{
+    text-decoration: none;
+}
 
 @media screen and (max-width:913px) {
     body {
