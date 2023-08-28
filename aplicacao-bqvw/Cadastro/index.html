@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usúario</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/botquest_icon (1).png" type="imagem">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="cadastro">
+        <form class="aba_cadastro">
+            <img class="logovw" src="img/VW.png" alt="">
+            <h2>Faça seu cadastro</h2>
+            <input class="id" placeholder="ID" type="text">
+            <input class="nome" placeholder="Nome" type="text">
+            <input class="time" placeholder="Time" type="text" maxlength="4">
+            <input class="supervisor" placeholder="Supervisor" type="text">
+            <input class="setor" placeholder="Setor" type="text">
+            <input class="senha" placeholder="Senha" type="password">
+            <input class="repetir_senha" placeholder="Repetir a sua senha" type="password">
+            <label class="id" for="ID"></label>
+            <label class="nome" for="Nome"></label>
+            <label class="time" for="Time"></label>
+            <label class="supervisor" for=""></label>
+            <label class="setor" for="Setor"></label>
+            <label class="senha" for="Senha"></label>
+            <label class="repetir_senha" for="Repetir a sua senha"></label>
+
+            <div class="nivel_da_senha">
+                <span>Nível da senha</span>
+                <div class="tudo">
+                    <div class=" linha">
+                        <div class="retangulo vermelho"></div>
+                        <span>Fraca</span>
+                    </div>
+                    <div class=" linha">
+                        <div class="retangulo amarelo"></div>
+                        <span>Média</span>
+                    </div>
+                    <div class=" linha">
+                        <div class="retangulo verde"></div>
+                        <span>Forte</span>
+                    </div>
+                </div>
+                <div class="teste">
+                    <span>Sugestão de Senha:</span>
+                    <ul>
+                        <li>No mínimo uma letra maiúscula</li>
+                        <li>No mínimo uma letra minúscula</li>
+                        <li>No mínimo um número</li>
+                    </ul>
+                    <div>
+                        <a onclick="on()" href="#">Cadastrar</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="aceite">
+            <div>
+                <input type="checkbox" id="check" name="checkbox">
+                <label for="check">Li e aceito os Termos e Condições da corporação</label>
+            </div>
+        </div>
+    </section>
+
+    <div id="mostrar_overlay">
+        <div id="overlay">
+            <div class="overlay_div">
+                <div>
+                    <h1>Confirmação do número de celular</h1>
+                    <span>Enviaremos um código ao seu número de celular registrado anteriormente</span>
+                </div>
+                <div>
+                    <img class="icon_celular" src="../Cadastro/img/icon_celular.png" alt="">
+                </div>
+            </div>
+            <div class="container">
+                <div class="wrapper-container">
+                  <p>
+                    Digite o código que você recebeu no seu número de celular com final XX59
+                  </p>
+              
+                    <div class="wrapper-pin">
+                        <input class="campo_cod" maxlength="1" type="tel" class="pin" tabIndex="1"/>
+                        <input class="campo_cod" maxlength="1" type="tel" class="pin" tabIndex="2"/>
+                        <input class="campo_cod" maxlength="1" type="tel" class="pin" tabIndex="3"/>
+                        <input class="campo_cod" maxlength="1" type="tel" class="pin" tabIndex="4"/>
+                        <input class="campo_cod" maxlength="1" type="tel" class="pin" tabIndex="5"/>
+                        <input class="campo_cod" maxlength="1" type="tel" class="pin" tabIndex="6"/>
+                    </div>          
+                </div>
+            </div>
+            <a href="../Login/index.html">Enviar</a>
+        </div>
+        <a onclick="off()" href="#">Voltar</a>
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>
