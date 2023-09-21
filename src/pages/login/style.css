@@ -1,0 +1,96 @@
+#main_login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 80px);
+
+  position: relative;
+}
+
+#main_login .logo {
+  width: 100px;
+}
+
+#main_login .dados > h1 {
+  font-weight: 800;
+}
+
+#main_login input{
+  text-align: center;
+  padding: 20px 50px;
+  margin-top: 15px;
+  border-radius: 40px;
+  font-size: 15px;
+}
+
+#main_login input {
+  display: flex;
+  text-align: center;
+
+  padding: 20px 50px;
+  margin-top: 15px;
+  border-radius: 40px;
+  font-size: 15px;
+  color: black;
+  font-style: normal;
+}
+  
+#main_login input::placeholder {
+  color: #474747;
+  height: 25px;
+  font-size: 15px;
+  /* background-color: #20a28e3e; */
+  border-radius: 7px;
+}
+
+
+
+
+#main_login button {
+  margin: 20px 0;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--branco);
+  text-decoration: none;
+  padding: 15px 50px;
+  border-radius: 40px;
+  background: #01b0f1;
+  color: rgb(255, 255, 255, 0.3);
+  transition: ease-in 0.2s;
+  color: var(--branco);
+}
+
+#main_login .dados > p {
+  color: var(--branco);
+  padding-top: 30px;
+}
+
+#main_login .dados > p > button {
+  text-decoration: none;
+  color: var(--branco);
+  font-weight: 600;
+}
+
+#main_login .img_vw{
+  width: 120px;
+}
+
+#admin-button{
+  position: absolute;
+  right: 0;
+  bottom: 15%;
+  background-color: var(--azulC);
+  width: 80px;
+
+  border-radius: 40px 0 0 40px;
+
+  padding: 5px 50px;
+}
+
+#admin-button>img{
+  width: 40px;
+  position: relative;
+  right: 20px;
+}
+

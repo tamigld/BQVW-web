@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#homeHelpdesk  {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Righteous', cursive;
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    background-color: #00101F;
+}
+/* 
+header#homeHelpdesk  {
+    height: 80px;
+    width: 100%;
+    background-image: url("img/Header.png");
+} */
+
+#homeHelpdesk .heder {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#homeHelpdesk .heder img {
+    width: 80px;
+    margin-top: 25px;
+}
+
+main#homeHelpdesk  {
+    display: flex;
+    justify-content: end;
+}
+
+ aside {
+    position: fixed;
+    left: 0;
+}
+
+#homeHelpdesk .aside_position {
+    height: 633px;
+    width: 229px;
+    border: solid #2e3b47 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#homeHelpdesk a {
+    color: white;
+    text-decoration: none;
+}
+
+#homeHelpdesk .Dashboard_aside {
+    width: 12vw;
+    background: #01B0F1;
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#homeHelpdesk .Usuario_aside {
+    width: 12vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 55px;
+}
+
+#homeHelpdesk .Dados_aside {
+    width: 12vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#homeHelpdesk .Suporte_aside {
+    width: 12vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#homeHelpdesk .COnfiguração_aside {
+    width: 12vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 55px;
+}
+#homeHelpdesk .COnfiguração_aside img{
+    width: 50px;
+    
+}
+#homeHelpdesk .COnfiguração_aside:hover{
+    background: #01B0F1;
+    border-radius: 0 15px 15px 0;
+    transition:ease-in 0.5s;
+}
+
+#homeHelpdesk section {
+    height:100%;
+    width: 85%;
+    border: solid #2e3b47 3px;
+    background-image: url("img/fundo.png");
+}
+
+#homeHelpdesk .Resumo_recentes img{
+    width: 50px;
+    display: none;
+}
+
+#homeHelpdesk .Resumo_recentes {
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#homeHelpdesk .PaiDosQuadrados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 30px;
+
+    margin-left: 60px;
+}
+
+#homeHelpdesk .quadrado_resumo {
+    width: 300px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    background: #6969b3;
+    border-radius: 35px;
+    display: flex;
+    justify-content: right;
+}
+
+#homeHelpdesk .quadradinho_resumo {
+    height: 100px;
+    width: 290px;
+    background: #000B15;
+    border-radius: 15px;
+}
+
+#homeHelpdesk .quadradinho_resumo>p {
+    margin: 5px;
+    padding: 10px 0 0 10px;
+}
+
+
+#homeHelpdesk .numeros_recentes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #01B0F1;
+    width: 100px;
+    height: 35px;
+    border-radius: 25px;
+    margin-left: 180px;
+}
+
+#homeHelpdesk .linha_divisoria {
+    margin: 30px;
+    width: 90%;
+    height: 2px;
+    background: #2e3b47;
+}
+
+#homeHelpdesk .Solicitacoes {
+
+    width: 90%;
+    height: 90%;
+    background: #000B15;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#homeHelpdesk .Sub_titulos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+margin-top: 30px;
+}
+
+#homeHelpdesk h2 {
+    margin-left: 60px;
+    margin-bottom: 5px;
+}
+
+#homeHelpdesk .Sub_titulos2 {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+#homeHelpdesk .alinhamento_nome {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+#homeHelpdesk table{
+    border-collapse: collapse;
+}
+
+#homeHelpdesk th,td {
+    border-bottom: 1px solid #2e3b47;
+    text-align: left;
+}
+
+#homeHelpdesk tr:hover {
+    background-color: #01b1f149;
+}
+
+#homeHelpdesk tr{
+    cursor: pointer;
+}
+
+#homeHelpdesk tbody img{
+    width: 45px;
+    margin: 10px;
+}
+
+@media screen and ( max-width:1400px ) {
+
+    #homeHelpdesk .aside_position{
+        border: none;
+    }
+
+   #homeHelpdesk  section{
+        border: none;
+    }
+}
+
+@media screen and (max-width:1045px) {
+    #homeHelpdesk aside{
+        display: none;
+    }
+
+    #homeHelpdesk section{
+        width: 100%;
+    }
+    #homeHelpdesk .Resumo_recentes img{
+        display: flex;
+    }
+}
+
+@media screen and (max-width:810px) {
+    #homeHelpdesk table{
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    #homeHelpdesk thead {
+        display: none;
+    }
+
+    #homeHelpdesk td {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 20ch auto;
+
+        padding: 10px 15px;
+        /* border-bottom: none; */
+    }
+
+    #homeHelpdesk td:nth-child(1)::before{
+        content: " ";
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+   #homeHelpdesk  td:nth-child(2)::before{
+        content: "Setor: ";
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+    #homeHelpdesk td:nth-child(3)::before{
+        content: "Cargo ";
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+    #homeHelpdesk td:nth-child(4)::before{
+        content: "Tipo de solicitação: ";
+        font-weight: 700;
+        text-transform: capitalize;
+
+    }
+    #homeHelpdesk td:nth-child(5)::before{
+        content: "Data: ";
+        font-weight: 700;
+        text-transform: capitalize;
+
+    }
+    #homeHelpdesk td:nth-child(6)::before{
+        content: "Situação: ";
+        font-weight: 700;
+        text-transform: capitalize;
+
+    }
+
+
+    #homeHelpdesk td:first-child {
+        padding-top: 24px;
+    }
+
+   #homeHelpdesk  td:last-child {
+        padding-bottom: 24px;
+    }   
+}
+
+@media screen and (max-width: 662px) {
+    main#homeHelpdesk {
+        width: 90%;
+    }    
+}
+
+@media screen and (max-width: 500px) {
+    #homeHelpdesk td {
+        grid-template-columns: 12ch auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #homeHelpdesk td {
+        font-size: 14px;
+    }
+}

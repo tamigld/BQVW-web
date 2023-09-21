@@ -1,0 +1,141 @@
+
+:root {
+  --cinza: #f1f2f5;
+  --verde: #23ce6b;
+}
+
+#cardTarefa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  padding: 12px;
+  border-radius: 0 80px 80px;
+
+  width: 100%;
+  height: 50px;
+  background-color: #f1f2f5;
+}
+
+#cardTarefa > div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: black;
+}
+
+#cardTarefa .bolinha {
+  width: 15px;
+  height: 15px;
+  background-color: #ce6123;
+  border-radius: 50px;
+}
+
+#cardTarefa > button {
+  width: 50px;
+  height: 50px;
+  border-radius: 80px;
+  border: none;
+  background-color: var(--cinza);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cardTarefa{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 12px;
+    border-radius: 0 80px 80px;
+
+    width: 100%;
+    background-color: #F1F2F5;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: -15px;
+  right: -6px;
+  height: 40px;
+  width: 40px;
+  background-color: #d4d4d4;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: var(--verde);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 16px;
+  top: 13px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+#cardTarefa .icon_apagar{
+  transition: ease-in 0.1s;
+  padding: 10px;
+  width: 35px;
+  height: 35px;
+
+  cursor: pointer;
+}
+
+#cardTarefa .icon_apagar:hover{
+  fill: rgb(151, 61, 61);
+}
+
+#cardTarefa>div:nth-child(2){
+  gap: 2px;
+}

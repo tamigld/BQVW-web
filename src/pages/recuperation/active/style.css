@@ -1,0 +1,128 @@
+.LINK-ENVIADO {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.LINK-ENVIADO .overlap-wrapper {
+  height: 548px;
+  overflow-x: hidden;
+
+  width: 617px;
+}
+
+.LINK-ENVIADO .overlap {
+  height: 564px;
+  position: relative;
+  top: -16px;
+  width: 631px;
+} 
+
+.LINK-ENVIADO .overlap-group-wrapper {
+  height: 548px;
+  left: 0;
+  position: absolute;
+  top: 16px;
+  width: 623px;
+} 
+
+.LINK-ENVIADO .overlap-group {
+  height: 548px;
+  position: relative;
+  width: 617px;
+} 
+
+ /* .LINK-ENVIADO .rectangle { */
+  /* background-color: #ffffff; */
+  /* border-radius: 94.72px;
+  box-shadow: 0px 14.06px 15.54px #0000008f;
+  height: 504px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 617px;
+}  */
+
+.LINK-ENVIADO .login {
+  height: 88px;
+  left: 172px;
+  position: absolute;
+  top: 460px;
+  width: 276px;
+}
+
+/* .LINK-ENVIADO .div-wrapper {
+  background: linear-gradient(
+    180deg,
+    rgb(1, 176, 241) 0%,
+    rgb(53.38, 188.64, 245.16) 38.02%,
+    rgb(177.44, 218.58, 255) 100%
+  );
+  border: 6px solid;
+  border-color: #ffffff69;
+  border-radius: 39.22px;
+  box-shadow: 4.44px 5.92px 8.14px #00000040;
+  height: 88px;
+  position: relative;
+  width: 274px;
+} */
+
+.LINK-ENVIADO .text-wrapper {
+  color: #00101f;
+  font-family: "Montserrat-Bold", Helvetica;
+  font-size: 35px;
+  font-weight: 700;
+  left: 50px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 16px;
+}
+
+.LINK-ENVIADO .div {
+  color: #000000;
+  font-family: "Montserrat-Black", Helvetica;
+  font-size: 64px;
+  font-weight: 900;
+  left: 84px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 81px;
+}
+
+.LINK-ENVIADO .text-wrapper-2 {
+  color: #ffffff;
+  font-family: "Montserrat-Bold", Helvetica;
+  font-size: 35px;
+  font-weight: 700;
+  left: 156px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 384px;
+}
+
+.LINK-ENVIADO .p {
+  color: #ffffff;
+  font-family: "Montserrat-Medium", Helvetica;
+  font-size: 32px;
+  font-weight: 500;
+  left: 75px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 180px;
+  width: 467px;
+}
+
+.LINK-ENVIADO .fechar {
+  height: 70px;
+  left: 531px;
+  position: absolute;
+  top: 0;
+  width: 70px;
+}

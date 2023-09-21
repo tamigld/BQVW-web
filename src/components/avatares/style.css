@@ -1,0 +1,28 @@
+.avatar{
+    transition: ease-in all 0.2s;
+    cursor: pointer;
+}
+
+.input-hidden {
+    position: absolute;
+    left: -9999px;
+}
+
+input[type=radio] + label>img {
+    outline: rgb(255, 255, 255, 0) solid 1px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 500ms all;
+}
+
+input[type=radio] + label>img:hover {
+    outline: white solid 1px;
+    border-radius: 30px;
+}
+
+input[type=radio]:checked + label>img {
+    border-radius: 30px;
+
+    /* outline: var(--verdeC) solid 3px; */
+    box-shadow: 0 0 3px 3px var(--verdeC);
+}

@@ -1,0 +1,41 @@
+footer {
+  gap: 50px;
+  background-color: rgb(2, 17, 31, 0.5);
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 80px 40px;
+  border-top: 1px solid #ffffff;
+}
+
+footer a {
+  color: var(--branco);
+  font-weight: 500;
+}
+
+footer div:nth-child(5) > a {
+  text-decoration: none;
+}
+
+footer div:nth-child(5) > img {
+  width: 70px;
+}
+
+footer div:nth-child(5) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 50px;
+}
+
+footer li {
+  margin-top: 5px;
+  margin-left: 18px;
+}
+
+footer h2 {
+  font-size: 18px;
+}
+
+footer ul {
+  font-size: 15px;
+}

@@ -1,0 +1,78 @@
+#editAvatar{
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#editAvatar>.editAvatar{
+    /* height: 75%; */
+    width: 75%;
+
+    padding: 3% 8%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    /* gap: 30px; */
+
+    border-radius: 50px;
+    border: 3px solid var(--BRANCO, #F1F2F5);
+    background: var(--bgComponent, rgba(1, 176, 241, 0.10));
+    box-shadow: 6px -9px 44px 0px rgba(0, 0, 0, 0.09);
+    backdrop-filter: blur(100px);
+}
+
+#editAvatar>.editAvatar-low{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#editAvatar h1{
+    text-align: center;
+    font-weight: 400;
+}
+
+#editAvatar h3{
+    transition: ease-in all 0.2s;
+    cursor: pointer;
+}
+
+#editAvatar h3:hover{
+    color: var(--verdeC);
+}
+
+#editAvatar .avatares{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 15px;
+
+    margin: 20px 0;
+    width: 70%;
+}
+
+.selectAvatares{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selectAvatares>button{
+    border: none;
+    border-radius: 39.22px;
+    background: var(--azulC);
+    color: var(--branco);
+
+    padding: 15px 40px;
+}
+
+loader-edit{
+    background-color: none;
+}
+
