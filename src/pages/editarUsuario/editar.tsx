@@ -18,7 +18,9 @@ export default function EditarUsuario() {
                 <h2>Nome do usuário</h2>
                 <div className="span">
                     <span>Na empresa desde: ....</span>
-                    <span className={2}>Na plataforma desde: ....</span>
+                    <span 
+                    // className={2}
+                    >Na plataforma desde: ....</span>
                 </div>
             </div>
             <div className="editar_esquerda">
@@ -36,7 +38,9 @@ export default function EditarUsuario() {
                 <input type="text" placeholder=" Direção" maxLength={6} />
                 <input type="text" placeholder=" VW - ID" maxLength={5} />
                 <div className="botao">
-                    <button className="salvar" onClick="salvar()" type="reset">
+                    <button className="salvar" 
+                    // onClick={salvar
+                     type="reset">
                         Atualizar usuário <img src="./img/🦆 icon _right user_.svg" alt="" />
                     </button>
                 </div>
